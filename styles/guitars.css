@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, p {
   margin: 0px;
 }
 
@@ -77,32 +77,14 @@ nav {
   top: 24px;
 }
 
-
-header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  text-align: center;
-  
-  border-bottom: 2px solid #C0B283;
-  
-  background-image: url(../images/home-guitar.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 header h1 {
   position: relative;
   font-size:40px;
   padding: 10px;
-  margin: 0 10px;
+  margin: 0;
   z-index: 20;
   background-color: rgba(0,0,0,0.7);
-  border: 2px solid white;
-  border-radius: 10px;
+  border: 2px solid #C0B283;
   font-family: Brush Script MT, cursive;
 }
 a {
@@ -124,7 +106,6 @@ nav a:link, nav a:visited {
 	color:#373737;
 }
 
-
 #welcome-info {
   display: flex;
   flex-direction: column;
@@ -133,28 +114,97 @@ nav a:link, nav a:visited {
   text-align: center;
 }
 
-#welcome-info p {
-  margin: 10px 0;
+.guitar {
+  padding: 10px;
+  font-size: 1.3em;
 }
 
-.link-button {
+.guitar h2 {
+  font-family: Brush Script MT, cursive;
+}
+
+.guitar img {
+  height: 140px;
+  width: 300px;
+}
+
+.accordion {
   position: relative;
+  background-color: 373737;
+  color: #C0B283;
+  padding: 5px;
+  transition: 0.5s;
+  border: 1px solid #C0B283;
+}
+
+.icon-container {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  transition: all 0.2s linear;
+}
+
+.icon-line {
+  content: '';
+  position: absolute;
+  background-color: #C0B283;
+  transition: all 0.2s linear;
+  transition-delay: 0.3s;
+}
+
+.vert {
   top: 0px;
-  padding: 10px 0px;
-  width: 98%;
-  border: 2px solid rgb(200,200,200);
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px white;
-  transition: all 0.1s linear;
+  left: calc(50% - 1.5px);
+  width: 3px;
+  height: 100%;
 }
 
-.link-button:active {
-  top: 4px;
-  box-shadow: 0px 0px 0px white;
+.hori {
+  top: calc(50% - 1.5px);
+  left: 0px;
+  width: 100%;
+  height: 3px;  
 }
 
-.guitar img, .legend img {
-  height: 200px;
+.guitar.active .accordion, .accordion:hover {
+  background-color: black;
+}
+
+.accordion-content {
+  padding: 0px;
+  max-height: 0;
+  text-align: center;
+  border: 1px solid #C0B283;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.accordion-content img {
+  width: 100%;
+  height: auto;
+}
+
+.accordion-content ul {
+  padding: 0px;
+}
+
+.guitar.active .icon-container {
+  /*background-color: red;*/
+  transform: rotate(45deg);
+}
+
+.guitar.active .hori {
+  transform: rotate(-45deg);
+}
+
+.guitar.active .vert {
+  transform: rotate(45deg);
+}
+
+.guitar.active .accordion-content {
+  padding: 5px;
 }
 
 footer {
@@ -162,12 +212,4 @@ footer {
   padding-left: 10px;
   border-top: 2px solid #C0B283;
   background-color: black;
-  
-  
-  /*
-	background-color:#DCD0C0;
-	color:#373737;
-  */
 }
-
-
