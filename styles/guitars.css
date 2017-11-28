@@ -77,10 +77,6 @@ nav {
   top: 24px;
 }
 
-
-header {
-}
-
 header h1 {
   position: relative;
   font-size:40px;
@@ -120,7 +116,7 @@ nav a:link, nav a:visited {
 
 .guitar {
   padding: 10px;
-  
+  font-size: 1.3em;
 }
 
 .guitar h2 {
@@ -132,7 +128,8 @@ nav a:link, nav a:visited {
   width: 300px;
 }
 
-h2.accordion {
+.accordion {
+  position: relative;
   background-color: 373737;
   color: #C0B283;
   padding: 5px;
@@ -140,27 +137,74 @@ h2.accordion {
   border: 1px solid #C0B283;
 }
 
-h2.accordion.active, h2.accordion:hover {
+.icon-container {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  transition: all 0.2s linear;
+}
+
+.icon-line {
+  content: '';
+  position: absolute;
+  background-color: #C0B283;
+  transition: all 0.2s linear;
+  transition-delay: 0.3s;
+}
+
+.vert {
+  top: 0px;
+  left: calc(50% - 1.5px);
+  width: 3px;
+  height: 100%;
+}
+
+.hori {
+  top: calc(50% - 1.5px);
+  left: 0px;
+  width: 100%;
+  height: 3px;  
+}
+
+.guitar.active .accordion, .accordion:hover {
   background-color: black;
-}
-
-h2.accordion:after {
-  content: '\002B';
-  color: #C0B283;
-  float: right;
-  margin-left: 5px;
-}
-
-h2.accordion.active:after {
-  content: '\2212';
 }
 
 .accordion-content {
   padding: 0px;
-  background-color: #373737;
   max-height: 0;
+  text-align: center;
+  border: 1px solid #C0B283;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
+}
+
+.accordion-content img {
+  width: 100%;
+  height: auto;
+}
+
+.accordion-content ul {
+  padding: 0px;
+}
+
+.guitar.active .icon-container {
+  /*background-color: red;*/
+  transform: rotate(45deg);
+}
+
+.guitar.active .hori {
+  transform: rotate(-45deg);
+}
+
+.guitar.active .vert {
+  transform: rotate(45deg);
+}
+
+.guitar.active .accordion-content {
+  padding: 5px;
 }
 
 footer {

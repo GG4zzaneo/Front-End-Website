@@ -140,8 +140,8 @@ nav a:link, nav a:visited {
 .link-button {
   position: relative;
   top: 0px;
-  padding: 10px 20px;
-  background-color: ;
+  padding: 10px 0px;
+  width: 98%;
   border: 2px solid rgb(200,200,200);
   border-radius: 10px;
   box-shadow: 0px 4px 4px white;
