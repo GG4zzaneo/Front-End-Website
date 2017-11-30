@@ -7,7 +7,6 @@ nav {
   flex-direction: column;
   justify-content: center;
 	background-color: #DCD0C0;
-  border-bottom: 2px solid white;
   border-bottom: 4px solid #C0B283;
   transition: top 0.3s ease-in-out;
 	font-size: 21px;
@@ -29,8 +28,7 @@ nav {
 }
 
 .menu-item-box {
-  margin: 10px 0px;
-  padding-left: 10px;
+  padding: 10px;
 }
 
 #burger-menu {
@@ -39,7 +37,6 @@ nav {
   right: 15px;
 	height: 33px;
 	width: 33px;
-	background-color:#DCD0C0; 
   background-color: #C0B283;
   border: 1px solid black;    
   border-radius: 5px;
@@ -53,6 +50,7 @@ nav {
 	width: 21px;
 	height: 3px;
   background-color: black;
+  transition: all 0.2s linear;
 }
 
 .burger-line:first-child {
@@ -63,11 +61,26 @@ nav {
   top: 24px;
 }
 
+#burger-menu.active .burger-line:first-child {
+  top: 15px;
+  transform: rotate(45deg);
+}
 
+#burger-menu.active .burger-line:nth-child(2) {
+  transform: rotateX(90deg);
+}
+
+#burger-menu.active .burger-line:last-child {
+  top: 15px;
+  transform: rotate(-45deg);
+}
+
+/*
 nav a:active{
 	background-color:#373737;
 	color:#C0B283;
 }
+*/
 
 nav a:hover {
 	background-color:#F4F4F4;
@@ -75,5 +88,46 @@ nav a:hover {
 
 nav a:link, nav a:visited {
 	color:#373737;
+}
+
+@media screen and (min-width: 900px) {
+  nav a:hover {
+    background-color:#F4F4F4;
+    background-size: 110%;
+  }
+  
+  .menu-item-box {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    padding: 10px 0px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: background 0.2s ease-in-out;
+  }
+
+  .menu-item-box:nth-child(1) {
+    background-image: url(../images/les_paul.png);
+  }
+
+  .menu-item-box:nth-child(2) {
+    background-image: url(../images/strat.png);
+  }
+
+  .menu-item-box:nth-child(3) {
+    background-image: url(../images/es335.png);
+  }
+
+  .menu-item-box:nth-child(4) {
+    background-image: url(../images/jag.png);
+  }
+
+  .menu-item-box h3 {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.5)
+  }
 }
 
