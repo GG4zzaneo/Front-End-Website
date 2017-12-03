@@ -75,33 +75,36 @@ a {
 }
 
 /*about styles*/
-.tab-container {
-  text-align: center;
-}
 .about-content input {
   display: none;
 }
 
-.tab-container label {
-  margin: 5px 0px;
-  padding: 10px 0px;
+.about-content label {
+  display: block;
+  width: 100%;
+  padding: 5px 0px;
+  text-align: center;
 }
 
-.about-content p {
+.tab-content {
   display: none;
+  padding: 10px;
+  border-top: 2px solid #C0B283;
 }
 
 #tab-1:checked ~ #content-1,
 #tab-2:checked ~ #content-2,
 #tab-3:checked ~ #content-3,
-#tab-4:checked ~ #content-4 {
+#tab-4:checked ~ #content-4, 
+#tab-5:checked ~ #content-5 {
   display: block;
 }
 
-#tab-1:checked {
-  width: 100px;
-  border: 3px solid white;
+input[type="radio"]:checked + label{ 
+  background-color: #DCD0C0; 
 }
+
+
 
 /*page styles*/
 .accordion-container {
@@ -115,7 +118,7 @@ a {
 
 .accordion-tab {
   position: relative;
-  background-color: 373737;
+  background-color: #373737;
   color: #C0B283;
   padding: 5px;
   transition: 0.5s;
@@ -197,15 +200,23 @@ footer {
   padding-left: 10px;
   border-top: 2px solid #C0B283;
   background-color: black;
-  
-  
-  /*
-	background-color:#DCD0C0;
-	color:#373737;
-  */
 }
 
-
+/*Desktop styles*/
+@media screen and (min-width: 900px) {  
+  
+  
+  /*about styles*/
+  .about-content label {
+    float: left;
+    width: 20%;
+  }
+  
+  .tab-content {
+    clear: both;
+  }
+  
+}
 
 
 

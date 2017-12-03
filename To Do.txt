@@ -1,0 +1,63 @@
+
+    Avoid IDs for selectors—they're too tightly coupled with HTML
+    Avoid !important. It means the specificity of your CSS is out of control!
+    Don't use numbers at the start of a class or ID name
+    Avoid trailing zeros in values e.g. 2em not 2.0em
+    Use hyphens, not underscores, for multi-word ID or class names
+    After general styles, order styles as they appear in the HTML
+    The universal selector (wildcard) * is slow
+
+indent your code properly: 2 spaces!
+align opening and closing:
+< tags > (HTML)
+and { braces } (CSS and JavaScript)
+
+
+Proximity
+
+Proximity sets up visual cues that group similar items, suggesting how to ‘read’ content.
+
+    Group related items with each other
+    Use common styles to connect grouped items
+    Sort complex content into groups for legibility
+
+The BBC iPlayer website uses proximity and containment to group related items
+
+The Guardian website groups ‘most popular’ news stories together
+
+
+    Everything should be placed thoughtfully in the layout
+    Every item is connected visually with other page elements
+
+
+Alignment
+
+Alignment enables page elements to be seen as part of a whole, creating a holistic feel to the various pieces of information.
+
+A strict use of alignment on a former version of the Oslo-based design agency Heydays website gives a pleasing sense of coherence and simplicity.
+
+
+
+Rep
+    Repeat design themes throughout the interface
+    Repetition provides consistency across design elements
+    Consistent sizing and proportions strengthen style
+
+Use:
+
+    site-wide templates and partials for consistency
+    style rules for content e.g. common image sizes (at least widths), matching heading styles…
+    
+    
+Contrast
+
+    Make distinctly different items look different
+    Contrast makes content appear visually inviting
+
+There are many ways to create contrast. For example:
+colour, fonts, rules, column widths, etc.
+
+    Javascript plugin site unheap.com uses bold colours
+    A previous design for agency Touch used nice hover transitions (the current site is slow and annoying!)
+
+
