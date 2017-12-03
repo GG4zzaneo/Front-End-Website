@@ -91,6 +91,31 @@ nav a:link, nav a:visited {
 }
 
 @media screen and (min-width: 900px) {
+  #nav-cover {
+    display: none;
+  }
+  
+  #burger-menu {
+    display: none;
+  }
+  
+  nav {
+    position: static;
+    height: auto;
+    flex-direction: row;
+  }
+  
+  .menu-item-box {
+    width: 100%;
+  }
+  
+  .menu-item-text {
+    text-align: center;
+  }
+}
+
+/*
+@media screen and (min-width: 900px) {
   nav a:hover {
     background-color:#F4F4F4;
     background-size: 110%;
@@ -130,4 +155,6 @@ nav a:link, nav a:visited {
     background-color: rgba(0,0,0,0.5)
   }
 }
+/*
+
 
