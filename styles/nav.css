@@ -103,69 +103,72 @@ nav a:link, nav a:visited {
     position: relative;
     top: 0px;
     left: 0px;
+    flex-direction: row;
     height: 40vh;
-    //background-color: black;
     overflow: hidden;
   }
   
   .menu-item-box {
-    position: absolute;
-    top: 100%;
-    width: 60%;
+    position: relative;
+    width: 40%;
     height: 100%;
+    //flex-shrink: 0;
     display: flex;
     align-items: center;
     
+    padding: 0px;
+    
     background-position: center;
-    background-size: 100%;
+    background-size: 90%;
     background-repeat: no-repeat;
 	  background-color: #DCD0C0;
+	  background-color: transparent;
+        
+    //border-top: 2px solid black;
     
-    border-top: 2px solid black;
-    
-    transform-origin: top left;
+    transform-origin: center;
     transform: rotate(-45deg);
     transition: all 0.5s ease;
   }
   
   .menu-item-box:nth-child(1) {
-    left: -40%;
-  }
-  
-  .menu-item-box:nth-child(2) {
-    left: -10%;
     background-image: url(../images/les_paul.png);
   }
   
-  .menu-item-box:nth-child(3) {
-    left: 15%;
+  .menu-item-box:nth-child(2) {    
     background-image: url(../images/strat.png);
+    //background-color: blueviolet;
   }
   
-  .menu-item-box:nth-child(4) {
-    left: 40%;
+  .menu-item-box:nth-child(3) {    
     background-image: url(../images/es335.png);
+    //background-color: aqua;
   }
   
-  .menu-item-box:nth-child(5) {
-    left: 65%;
+  .menu-item-box:nth-child(4) {    
     background-image: url(../images/jag.png);
-    border-bottom: 2px solid black;
-  }
-  
-  .menu-item-box:nth-child(6) {
-    left: 90%;
-  }
-  
-  a.menu-item-box:hover {
-    background-size: 110%;
   }
   
   .menu-item-text {
-    width: 100%;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: -50%;
+    width: 200%;
+    height: 30px;
+    text-align: center;
     color: white;
     background-color: rgba(0,0,0,0.5);
-    padding-left: 150px;
+    transition: all 0.5s ease;
+  }
+  
+  a.menu-item-box:hover {
+    background-size: 100%;
+    background-color: transparent;
+  }
+  
+  a.menu-item-box:hover .menu-item-text {
+    color: black;
+    background-color: rgba(255,255,255,0.5);
   }
 }
 
