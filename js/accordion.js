@@ -31,7 +31,9 @@
         if (panel.style.maxHeight){
           panel.style.maxHeight = null;
         } else {
-          panel.style.maxHeight = `${panel.scrollHeight}px`;
+          //panel.style.maxHeight = `${panel.scrollHeight}px`;
+					//Allows content to expand with window on window resize
+          panel.style.maxHeight = "1500px";
         } 
         //Once correct element found end loop
         break;

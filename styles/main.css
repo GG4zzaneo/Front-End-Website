@@ -193,7 +193,12 @@ input[type="radio"]:checked + label{
 }
 
 .accordion-content ul {
-  padding: 0px;
+  padding: 0px 5px;
+}
+
+.accordion-content li {
+  display: flex;
+	justify-content: space-between;
 }
 
 .accordion-container.active .accordion-tab, .accordion:hover {
@@ -213,8 +218,6 @@ input[type="radio"]:checked + label{
   transform: rotate(45deg);
 }
 
-
-
 /*footer styles*/
 footer {
   padding: 15px 0;
@@ -223,10 +226,96 @@ footer {
   background-color: black;
 }
 
-/*Desktop styles*/
-@media screen and (min-width: 1100px) {  
+
+
+/*tablet styles*/
+@media screen and (min-width: 600px) {
   
+  /*page stlyes*/
+  .accordion-content {
+    padding: 0px;
+  }
   
+  .accordion-content img {
+    padding: 0px 5px;
+  }
+  
+  .accordion-content div {
+    display: flex;
+  }
+  
+  .accordion-content ul {
+    width: 30%;
+    margin: 0px;
+    padding: 5px;
+    padding-bottom: 30px;
+    border: 1px solid #C0B283;
+    border-left-width: 0px;
+  } 
+  
+  .accordion-content li {
+    flex-direction: column;
+  } 
+  
+  .accordion-content span {
+		padding: 2px;
+  } 
+  
+  .accordion-content span:first-child {
+    text-align: left;
+    text-decoration: underline;
+  } 
+  
+  .accordion-description-container {
+		align-items: center;
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #C0B283;
+    border-width: 1px 0px;
+  }
+  
+}
+
+/*desktop styles*/
+@media screen and (min-width: 1000px) {  
+	
+  header {
+    height: 60vh;
+  }
+	
+	/*page styles*/
+	.accordion-content {
+		position: relative;
+	}
+	
+	.accordion-content img {
+		max-height: 70vh;
+	}
+	
+	.accordion-content > div {
+		position: absolute;
+		/*
+		top: 25%;
+		bottom: 25%;
+		*/
+		bottom: 0px;
+		left: 0px;
+		background-color: rgba(0,0,0,0.8);
+		opacity: 0;
+		transition: opacity 0.2s ease-in-out;
+	}
+	
+	.accordion-content > div:hover {
+		opacity: 1;
+	}
+	
+	.accordion-content ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	
   /*about styles*/
   .about-content label {
     float: left;
