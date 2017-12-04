@@ -125,31 +125,39 @@ nav a:link, nav a:visited {
     
     transform-origin: top left;
     transform: rotate(-45deg);
-    transition: all 2s ease;
+    transition: all 0.5s ease;
   }
   
   .menu-item-box:nth-child(1) {
+    left: -40%;
+  }
+  
+  .menu-item-box:nth-child(2) {
     left: -10%;
     background-image: url(../images/les_paul.png);
   }
   
-  .menu-item-box:nth-child(2) {
+  .menu-item-box:nth-child(3) {
     left: 15%;
     background-image: url(../images/strat.png);
   }
   
-  .menu-item-box:nth-child(3) {
+  .menu-item-box:nth-child(4) {
     left: 40%;
     background-image: url(../images/es335.png);
   }
   
-  .menu-item-box:nth-child(4) {
+  .menu-item-box:nth-child(5) {
     left: 65%;
     background-image: url(../images/jag.png);
     border-bottom: 2px solid black;
   }
   
-  .menu-item-box:hover {
+  .menu-item-box:nth-child(6) {
+    left: 90%;
+  }
+  
+  a.menu-item-box:hover {
     background-size: 110%;
   }
   
