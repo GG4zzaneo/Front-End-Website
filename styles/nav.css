@@ -100,17 +100,64 @@ nav a:link, nav a:visited {
   }
   
   nav {
-    position: static;
-    height: auto;
-    flex-direction: row;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 40vh;
+    //background-color: black;
+    overflow: hidden;
   }
   
   .menu-item-box {
-    width: 100%;
+    position: absolute;
+    top: 100%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+	  background-color: #DCD0C0;
+    
+    border-top: 2px solid black;
+    
+    transform-origin: top left;
+    transform: rotate(-45deg);
+    transition: all 2s ease;
+  }
+  
+  .menu-item-box:nth-child(1) {
+    left: -10%;
+    background-image: url(../images/les_paul.png);
+  }
+  
+  .menu-item-box:nth-child(2) {
+    left: 15%;
+    background-image: url(../images/strat.png);
+  }
+  
+  .menu-item-box:nth-child(3) {
+    left: 40%;
+    background-image: url(../images/es335.png);
+  }
+  
+  .menu-item-box:nth-child(4) {
+    left: 65%;
+    background-image: url(../images/jag.png);
+    border-bottom: 2px solid black;
+  }
+  
+  .menu-item-box:hover {
+    background-size: 110%;
   }
   
   .menu-item-text {
-    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding-left: 150px;
   }
 }
 
