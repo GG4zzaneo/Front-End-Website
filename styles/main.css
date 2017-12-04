@@ -218,8 +218,6 @@ input[type="radio"]:checked + label{
   transform: rotate(45deg);
 }
 
-
-
 /*footer styles*/
 footer {
   padding: 15px 0;
@@ -227,6 +225,8 @@ footer {
   border-top: 2px solid #C0B283;
   background-color: black;
 }
+
+
 
 /*tablet styles*/
 @media screen and (min-width: 600px) {
@@ -263,10 +263,10 @@ footer {
   
   .accordion-content span:first-child {
     text-align: left;
-    text-decoration: underline
+    text-decoration: underline;
   } 
   
-  .accordion-content div div {
+  .accordion-description-container {
 		align-items: center;
     width: 70%;
     padding: 5px;
@@ -276,21 +276,46 @@ footer {
   
 }
 
-
-/*
-<li><span>$1</span><span>$2</span></li>
-*/
-
 /*desktop styles*/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {  
+	
   header {
     height: 60vh;
   }
-}
-
-@media screen and (min-width: 1200px) {  
-  
-  
+	
+	/*page styles*/
+	.accordion-content {
+		position: relative;
+	}
+	
+	.accordion-content img {
+		max-height: 70vh;
+	}
+	
+	.accordion-content > div {
+		position: absolute;
+		/*
+		top: 25%;
+		bottom: 25%;
+		*/
+		bottom: 0px;
+		left: 0px;
+		background-color: rgba(0,0,0,0.8);
+		opacity: 0;
+		transition: opacity 0.2s ease-in-out;
+	}
+	
+	.accordion-content > div:hover {
+		opacity: 1;
+	}
+	
+	.accordion-content ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	
   /*about styles*/
   .about-content label {
     float: left;
