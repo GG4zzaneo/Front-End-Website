@@ -104,15 +104,15 @@ nav a:link, nav a:visited {
     top: 0px;
     left: 0px;
     flex-direction: row;
-    height: 40vh;
+    height: 30vh;
     overflow: hidden;
+    font-size: 18px;
   }
   
   .menu-item-box {
     position: relative;
     width: 40%;
     height: 100%;
-    //flex-shrink: 0;
     display: flex;
     align-items: center;
     
@@ -123,8 +123,6 @@ nav a:link, nav a:visited {
     background-repeat: no-repeat;
 	  background-color: #DCD0C0;
 	  background-color: transparent;
-        
-    //border-top: 2px solid black;
     
     transform-origin: center;
     transform: rotate(-45deg);
@@ -166,7 +164,7 @@ nav a:link, nav a:visited {
     background-color: transparent;
   }
   
-  a.menu-item-box:hover .menu-item-text {
+  a.menu-item-box:hover .menu-item-text, .menu-item-text.active {
     color: black;
     background-color: rgba(255,255,255,0.5);
   }

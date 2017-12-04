@@ -193,7 +193,12 @@ input[type="radio"]:checked + label{
 }
 
 .accordion-content ul {
-  padding: 0px;
+  padding: 0px 5px;
+}
+
+.accordion-content li {
+  display: flex;
+	justify-content: space-between;
 }
 
 .accordion-container.active .accordion-tab, .accordion:hover {
@@ -223,8 +228,67 @@ footer {
   background-color: black;
 }
 
-/*Desktop styles*/
-@media screen and (min-width: 1100px) {  
+/*tablet styles*/
+@media screen and (min-width: 600px) {
+  
+  /*page stlyes*/
+  .accordion-content {
+    padding: 0px;
+  }
+  
+  .accordion-content img {
+    padding: 0px 5px;
+  }
+  
+  .accordion-content div {
+    display: flex;
+  }
+  
+  .accordion-content ul {
+    width: 30%;
+    margin: 0px;
+    padding: 5px;
+    padding-bottom: 30px;
+    border: 1px solid #C0B283;
+    border-left-width: 0px;
+  } 
+  
+  .accordion-content li {
+    flex-direction: column;
+  } 
+  
+  .accordion-content span {
+		padding: 2px;
+  } 
+  
+  .accordion-content span:first-child {
+    text-align: left;
+    text-decoration: underline
+  } 
+  
+  .accordion-content div div {
+		align-items: center;
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #C0B283;
+    border-width: 1px 0px;
+  }
+  
+}
+
+
+/*
+<li><span>$1</span><span>$2</span></li>
+*/
+
+/*desktop styles*/
+@media screen and (min-width: 900px) {
+  header {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {  
   
   
   /*about styles*/
