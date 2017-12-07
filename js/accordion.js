@@ -1,11 +1,35 @@
 "use strict";
 (function(){
+	let openBtn = document.getElementById("open-btn");
+	let collapseBtn = document.getElementById("collapse-btn");
   let accordions = document.getElementsByClassName("accordion-tab");
 
+	openBtn.addEventListener("click", openAll);	
+	collapseBtn.addEventListener("click", collapseAll);
+	
   for (let i = 0; i < accordions.length; i++) { 
     //Add on click event to all accordion containers
     accordions[i].addEventListener("click", function(e){ toggleAccordion(e); }, false);    
   }
+	
+	function openAll(){
+		console.log("open all!");
+		
+		for (let i = 0; i < accordions.length; i++) {
+				accordions[i].parentElement.classList.add("active");
+				accordions[i].nextElementSibling.style.maxHeight = "1500px";				
+		}
+	}
+	
+	function collapseAll(){
+		console.log("Collapse All");
+		for (let i = 0; i < accordions.length; i++) {
+			if (accordions[i].parentElement.classList.contains("active")){
+				accordions[i].parentElement.classList.remove("active");
+				accordions[i].nextElementSibling.style.maxHeight = null;
+			}
+		}
+	}
   
   function toggleAccordion(e) {
     //Store click element

@@ -13,7 +13,7 @@
 	});
 
 	function toggleMenu(e) {
-		console.log(e.target);
+		//console.log(e.target);
 
 		if (e.target.id === "burger-menu" || e.target.classList.contains("burger-line")) {
 			console.log("buger or burger line");
