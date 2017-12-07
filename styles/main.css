@@ -313,19 +313,28 @@ footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-	}
+	}	
 	
 	
-  /*about styles*/
+  
+}
+
+@media screen and (min-width: 1100px) {  
+	/*about styles*/
   .about-content label {
     float: left;
     width: 20%;
+		border-right: 1px solid #C0B283;
+		box-sizing: border-box;
+  }
+  
+	#last-label {
+		border-right-width: 0px;
   }
   
   .tab-container {
     clear: both;
   }
-  
 }
 
 
