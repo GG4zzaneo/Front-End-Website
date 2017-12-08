@@ -21,7 +21,7 @@ header {
   
   border-bottom: 2px solid #C0B283;
   
-  background-image: url(../images/home-guitar.png);
+  background-image: url(../images/guitars/home-guitar.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -297,13 +297,13 @@ footer {
 	}
 	
 	#welcome-info a:nth-child(3) {
-		background-image: url(../images/es335.png);
+		background-image: url(../images/guitars/es335.png);
 	}	
 	
 	#welcome-info a:nth-child(5) {
 		top: 50%;
 		border-top: 1px solid #C0B283;
-		background-image: url(../images/jim.jpg);
+		background-image: url(../images/legends/jim.jpg);
 	}	
 	
 	#welcome-info a:hover {

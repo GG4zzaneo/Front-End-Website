@@ -131,19 +131,19 @@ nav a:visited {
 	}
 
 	.menu-item-box:nth-child(1) {
-		background-image: url(../images/les_paul.png);
+		background-image: url(../images/guitars/les_paul.png);
 	}
 
 	.menu-item-box:nth-child(2) {
-		background-image: url(../images/strat.png); //background-color: blueviolet;
+		background-image: url(../images/guitars/strat.png); 
 	}
 
 	.menu-item-box:nth-child(3) {
-		background-image: url(../images/es335.png); //background-color: aqua;
+		background-image: url(../images/guitars/es335.png); 
 	}
 
 	.menu-item-box:nth-child(4) {
-		background-image: url(../images/jag.png);
+		background-image: url(../images/guitars/jag.png);
 	}
 
 	.menu-item-text {
@@ -177,46 +177,3 @@ nav a:visited {
 		background-color: rgba(255, 255, 255, 0.5);
 	}
 }
-
-/*
-@media screen and (min-width: 900px) {
-  nav a:hover {
-    background-color:#F4F4F4;
-    background-size: 110%;
-  }
-  
-  .menu-item-box {
-    display: flex;
-    align-items: center;
-    height: 25%;
-    padding: 10px 0px;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    transition: background 0.2s ease-in-out;
-  }
-
-  .menu-item-box:nth-child(1) {
-    background-image: url(../images/les_paul.png);
-  }
-
-  .menu-item-box:nth-child(2) {
-    background-image: url(../images/strat.png);
-  }
-
-  .menu-item-box:nth-child(3) {
-    background-image: url(../images/es335.png);
-  }
-
-  .menu-item-box:nth-child(4) {
-    background-image: url(../images/jag.png);
-  }
-
-  .menu-item-box h3 {
-    width: 100%;
-    padding: 10px;
-    color: white;
-    background-color: rgba(0,0,0,0.5)
-  }
-}
-/*
