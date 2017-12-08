@@ -14,6 +14,12 @@
 
 	function toggleMenu(e) {
 		//console.log(e.target);
+		
+		alert(e.target.id);
+		alert(e.target.tagName);
+		alert(e.target.tagName.toLocaleLowerCase());
+		alert(e.target.tagName.toLocaleLowerCase);
+		alert(nav.classList.contains("toggle-nav"));
 
 		if (e.target.id === "burger-menu" || e.target.classList.contains("burger-line")) {
 			console.log("buger or burger line");
