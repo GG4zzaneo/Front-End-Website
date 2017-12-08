@@ -21,10 +21,26 @@ header {
   
   border-bottom: 2px solid #C0B283;
   
-  background-image: url(../images/guitars/home-guitar.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.cover-img-1 {
+	background-image: url(../images/guitars/home-guitar.png);
+}
+
+.cover-img-2 {
+	background-image: url(../images/guitars/humming2.jpg);
+}
+
+.cover-img-3 {
+	background-image: url(../images/legends/hendrix2.jpg);
+	background-image: url(../images/legends/sg2.jpg);
+}
+
+.cover-img-4 {
+	background-image: url(../images/guitars/strat2.jpg);
 }
 
 header h1 {
@@ -242,6 +258,10 @@ hr {
   transform: rotate(45deg);
 }
 
+.accordion-container.active .accordion-content {
+  max-height: 1500px;
+}
+
 /*footer styles*/
 footer {
   padding: 15px 0;
@@ -297,13 +317,13 @@ footer {
 	}
 	
 	#welcome-info a:nth-child(3) {
-		background-image: url(../images/guitars/es335.png);
+		background-image: url(../images/guitars/les2.jpg);
 	}	
 	
 	#welcome-info a:nth-child(5) {
 		top: 50%;
 		border-top: 1px solid #C0B283;
-		background-image: url(../images/legends/jim.jpg);
+		background-image: url(../images/legends/evh.jpg);
 	}	
 	
 	#welcome-info a:hover {

@@ -105,6 +105,7 @@ nav a:visited {
 		position: relative;
 		top: 0px;
 		left: 0px;
+		height: 30vh;
 		flex-direction: row;
 		overflow: hidden;
 		font-size: 18px;
