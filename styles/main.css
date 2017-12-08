@@ -52,8 +52,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  padding: 10px;
   text-align: center;
+	box-sizing: border-box;
 }
 
 #welcome-info p {
@@ -84,6 +85,7 @@ a {
 	background-color: #373737;
 	border-color: #C0B283;
   box-shadow: 0px 4px 4px #C0B283;
+	outline-style: none;
 }
 
 .link-button:active {
@@ -252,6 +254,65 @@ footer {
 
 /*tablet styles*/
 @media screen and (min-width: 600px) {
+	
+	/*index styles*/
+	
+	#welcome-info {
+		position: relative;
+		width: 50%;
+		border-left: 1px solid #C0B283;
+	}
+	
+	#welcome-info h1, #welcome-info p {
+		
+	}	
+	
+	#welcome-info a {
+		position: absolute;
+		top: 0px;
+		left: 100%;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		width: 100%;
+		height: 50%;
+		box-sizing: border-box;
+		
+		background-position: center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		
+		border-radius: 0px;
+		border-width: 0px 1px;
+		border-color: #C0B283;
+		box-shadow: 0px 0px 0px white;
+	}	
+	
+	#welcome-info a h3 {
+		background-color: rgba(0,0,0,0.7);
+		padding: 10px 20px;
+		border-radius: 4px;
+	}
+	
+	#welcome-info a:nth-child(3) {
+		background-image: url(../images/es335.png);
+	}	
+	
+	#welcome-info a:nth-child(5) {
+		top: 50%;
+		border-top: 1px solid #C0B283;
+		background-image: url(../images/jim.jpg);
+	}	
+	
+	#welcome-info a:hover {
+		background-size: 110%;
+	}
+	
+	footer {
+		clear: both;
+	}
   
   /*page stlyes*/
   .accordion-content {
@@ -309,6 +370,12 @@ footer {
     height: 60vh;
   }
 	
+	/*index styles*/
+	#welcome-info {
+		height: 60vh;
+		padding: 50px 5%;
+	}
+	
 	/*page styles*/
 	.accordion-content {
 		position: relative;
@@ -320,10 +387,6 @@ footer {
 	
 	.accordion-content > div {
 		position: absolute;
-		/*
-		top: 25%;
-		bottom: 25%;
-		*/
 		bottom: 0px;
 		left: 0px;
 		background-color: rgba(0,0,0,0.8);
