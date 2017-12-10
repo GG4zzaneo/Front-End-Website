@@ -96,6 +96,7 @@ a {
 
 .cta-container {
 	display: flex;
+  justify-content: space-around;
 }
 
 .cta-button {
@@ -172,6 +173,7 @@ input[type="radio"]:checked + label{
 .page-into {
 	text-align: center;
 	padding: 10px;
+  font-size: 1.3em;
 }
 
 .accordion-container {
@@ -244,6 +246,7 @@ input[type="radio"]:checked + label{
 
 .accordion-content ul {
 	margin-top: 10px;
+	margin-bottom: 0px;
   padding: 0px 5px;
 }
 
@@ -347,7 +350,8 @@ footer {
 		clear: both;
 	}
   
-  /*page stlyes*/
+  /*page stlyes*/  
+  
 	.accordion-container hr {
 		display: none;
 	}
@@ -365,16 +369,14 @@ footer {
     margin-bottom: 0px;
   }
   
-  .accordion-content ul {
-    width: 30%;
+  .accordion-content ul {    
+		display: flex;
+		flex-direction: column;
+		justify-content: center;  
+    width: 40%;
     margin: 0px;
     padding: 5px;
-    padding-bottom: 30px;
     border-right: 1px solid #C0B283;
-  } 
-  
-  .accordion-content li {
-    flex-direction: column;
   } 
   
   .accordion-content span {
@@ -388,7 +390,7 @@ footer {
   
   .accordion-description-container {
 		align-items: center;
-    width: 70%;
+    width: 60%;
     padding: 5px;
     border: 1px solid #C0B283;
     border-width: 0px;
@@ -396,6 +398,21 @@ footer {
   
 }
 
+@media screen and (min-width: 680px) {  
+ .cta-button {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 750px) {  	
+	.accordion-content ul {  
+    width: 30%;
+	}	
+  
+  .accordion-description-container {
+    width: 70%;
+  }
+}
 /*desktop styles*/
 @media screen and (min-width: 1000px) {  
 	
@@ -435,20 +452,12 @@ footer {
 		background-color: rgba(0,0,0,0.8);
 		border-top: 1px solid #C0B283;
 		opacity: 0;
-		transition: opacity 0.2s ease-in-out;
+		transition: opacity 0.4s ease-in-out;
 	}
 	
 	.accordion-content > div:hover {
 		opacity: 1;
-	}
-	
-	.accordion-content ul {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 	}	
-	
-	
   
 }
 

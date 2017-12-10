@@ -29,7 +29,7 @@ nav {
 	z-index: 100;
 }
 
-. menu-item-text {
+.menu-item-text {
 	text-align: center;
 	padding: 20px;
 }
@@ -159,7 +159,9 @@ nav a:visited {
 
 		width: 200%;
 		height: 30px;
+    padding: 0px;
 		padding-left: 10px;
+    
 
 		font-size: 28px;
 		font-family: Brush Script MT, cursive;
