@@ -77,11 +77,17 @@ a {
   margin: 10px 0;
 }
 
+#welcome-info hr {
+  display: none;
+}
+
 .link-button {
   position: relative;
   top: 0px;
+	margin: 10px 0px;
   padding: 10px 0px;
   width: 98%;
+	width: 50%;
   border: 2px solid rgb(200,200,200);
   border-radius: 10px;
   box-shadow: 0px 4px 4px white;
@@ -163,6 +169,11 @@ input[type="radio"]:checked + label{
 
 
 /*page styles*/
+.page-into {
+	text-align: center;
+	padding: 10px;
+}
+
 .accordion-container {
   padding: 10px;
   font-size: 1.3em;
@@ -213,21 +224,26 @@ input[type="radio"]:checked + label{
 }
 
 .accordion-content {
-  padding: 0px 5px;
-  max-height: 0;
+  max-height: 0px;
   text-align: center;
   border: 1px solid #C0B283;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 1s ease-in-out;
+}
+
+.accordion-content > div {
+	margin-bottom: 10px;
+  padding: 0px 5px;
 }
 
 .accordion-content img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+	border-bottom: 1px solid #C0B283;
 }
 
 .accordion-content ul {
+	margin-top: 10px;
   padding: 0px 5px;
 }
 
@@ -283,10 +299,6 @@ footer {
 		border-left: 1px solid #C0B283;
 	}
 	
-	#welcome-info h1, #welcome-info p {
-		
-	}	
-	
 	#welcome-info a {
 		position: absolute;
 		top: 0px;
@@ -298,6 +310,7 @@ footer {
 		
 		width: 100%;
 		height: 50%;
+		margin: 0px;
 		box-sizing: border-box;
 		
 		background-position: center;
@@ -320,7 +333,7 @@ footer {
 		background-image: url(../images/guitars/les2.jpg);
 	}	
 	
-	#welcome-info a:nth-child(5) {
+	#welcome-info a:nth-child(6) {
 		top: 50%;
 		border-top: 1px solid #C0B283;
 		background-image: url(../images/legends/evh.jpg);
@@ -335,16 +348,21 @@ footer {
 	}
   
   /*page stlyes*/
+	.accordion-container hr {
+		display: none;
+	}
+	
   .accordion-content {
     padding: 0px;
   }
   
-  .accordion-content img {
-    padding: 0px 5px;
-  }
-  
   .accordion-content div {
     display: flex;
+  }
+  
+  .accordion-content > div {
+		margin-top: -6px;
+    margin-bottom: 0px;
   }
   
   .accordion-content ul {
@@ -352,8 +370,7 @@ footer {
     margin: 0px;
     padding: 5px;
     padding-bottom: 30px;
-    border: 1px solid #C0B283;
-    border-left-width: 0px;
+    border-right: 1px solid #C0B283;
   } 
   
   .accordion-content li {
@@ -368,17 +385,13 @@ footer {
     text-align: left;
     text-decoration: underline;
   } 
-	
-	hr {
-		display: none;
-	}
   
   .accordion-description-container {
 		align-items: center;
     width: 70%;
     padding: 5px;
     border: 1px solid #C0B283;
-    border-width: 1px 0px;
+    border-width: 0px;
   }
   
 }
@@ -395,6 +408,15 @@ footer {
 		height: 60vh;
 		padding: 50px 5%;
 	}
+
+	#welcome-info hr {
+		display: block;
+	}
+
+	#welcome-info a {
+    font-family: Brush Script MT, cursive;
+		font-size: 28px;
+	}
 	
 	/*page styles*/
 	.accordion-content {
@@ -403,6 +425,7 @@ footer {
 	
 	.accordion-content img {
 		max-height: 70vh;
+		border-bottom-width: 0px;
 	}
 	
 	.accordion-content > div {
@@ -410,6 +433,7 @@ footer {
 		bottom: 0px;
 		left: 0px;
 		background-color: rgba(0,0,0,0.8);
+		border-top: 1px solid #C0B283;
 		opacity: 0;
 		transition: opacity 0.2s ease-in-out;
 	}

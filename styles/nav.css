@@ -29,7 +29,7 @@ nav {
 	z-index: 100;
 }
 
-.menu-item-box h3 {
+. menu-item-text {
 	text-align: center;
 	padding: 20px;
 }
@@ -109,15 +109,16 @@ nav a:visited {
 		flex-direction: row;
 		overflow: hidden;
 		font-size: 18px;
+		background-color: #373737;
 	}
 
 	.menu-item-box {
 		position: relative;
-		width: 40%;
-		height: 100%;
 		display: flex;
 		align-items: center;
 
+		width: 40%;
+		height: 100%;
 		padding: 0px;
 
 		background-position: center;
@@ -128,7 +129,7 @@ nav a:visited {
 
 		transform-origin: center;
 		transform: rotate(-45deg);
-		transition: all 0.5s ease;
+		transition: all 0.2s ease;
 	}
 
 	.menu-item-box:nth-child(1) {
@@ -136,26 +137,41 @@ nav a:visited {
 	}
 
 	.menu-item-box:nth-child(2) {
-		background-image: url(../images/guitars/strat.png); 
+		background-image: url(../images/guitars/strat.png);
 	}
 
 	.menu-item-box:nth-child(3) {
-		background-image: url(../images/guitars/es335.png); 
+		background-image: url(../images/guitars/jag.png);
 	}
 
 	.menu-item-box:nth-child(4) {
-		background-image: url(../images/guitars/jag.png);
+		background-image: url(../images/guitars/330.png);
 	}
 
 	.menu-item-text {
 		position: absolute;
 		top: calc(50% - 15px);
 		left: -50%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
 		width: 200%;
 		height: 30px;
+		padding-left: 10px;
+
+		font-size: 28px;
+		font-family: Brush Script MT, cursive;
 		text-align: center;
 		color: white;
+
 		background-color: rgba(0, 0, 0, 0.5);
+
+		border-width: 2px 0px;
+		border-style: solid;
+		border-color: #C0B283;
+
 		transition: all 0.5s ease;
 	}
 
@@ -168,9 +184,7 @@ nav a:visited {
 		padding: 10px;
 	}
 
-	.menu-item-box h3 {
-		padding: 0px;
-	}
+	.menu-item-box h3 {}
 
 	a.menu-item-box:hover .menu-item-text,
 	.menu-item-text.active {
