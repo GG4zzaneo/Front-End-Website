@@ -97,6 +97,7 @@ a {
 .cta-container {
 	display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .cta-button {
@@ -117,11 +118,11 @@ a {
 }
 
 /*about styles*/
-.about-content input {
+.tab-input {
   display: none;
 }
 
-.about-content label {
+.tab-label {
   display: block;
   width: 100%;
   padding: 5px 0px;
@@ -130,9 +131,14 @@ a {
 
 .tab-container {
   display: none;
-  height: 30vh;
+  height: 50vh;
   padding: 10px;
   border-top: 2px solid #C0B283;
+  transition: height 0.5s ease-in-out;
+}
+
+.toggle-results {
+  height: 80vh;
 }
 
 .tab-content {
@@ -155,6 +161,58 @@ a {
   }
 }
 
+.news-content {
+  flex-direction: column;
+}
+
+.search-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 10px 0px;
+}
+
+.news-content label {
+  margin: 5px 0px;
+}
+
+.news-content input {
+  padding: 2px;
+}
+
+.news-content button {
+  width: 100%;
+}
+
+#search-results {
+  height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+#search-results li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+  color: black;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #C0B283;
+}
+
+#search-results li a {
+  color: white;
+}
+
+#search-results li span {
+  color: #C0B283;
+  padding: 5px 0px;
+}
+
+
 #tab-1:checked ~ #content-1,
 #tab-2:checked ~ #content-2,
 #tab-3:checked ~ #content-3,
@@ -163,9 +221,15 @@ a {
   display: block;
 }
 
+#content-5 {
+  border-top: 2px solid #C0B283;
+}
+
 input[type="radio"]:checked + label{ 
   background-color: #DCD0C0; 
+  background-color: rgba(255,255,255; 
 }
+
 
 
 
