@@ -212,7 +212,6 @@ a {
   padding: 5px 0px;
 }
 
-
 #tab-1:checked ~ #content-1,
 #tab-2:checked ~ #content-2,
 #tab-3:checked ~ #content-3,
@@ -227,7 +226,6 @@ a {
 
 input[type="radio"]:checked + label{ 
   background-color: #DCD0C0; 
-  background-color: rgba(255,255,255; 
 }
 
 
