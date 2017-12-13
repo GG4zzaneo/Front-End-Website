@@ -117,7 +117,27 @@ a {
   box-shadow: 0px 0px 0px white;
 }
 
+
+
+
+
 /*about styles*/
+#tab-1:checked ~ #content-1,
+#tab-2:checked ~ #content-2,
+#tab-3:checked ~ #content-3,
+#tab-4:checked ~ #content-4, 
+#tab-5:checked ~ #content-5 {
+  display: block;
+}
+
+#content-5 {
+  border-top: 2px solid #C0B283;
+}
+
+input[type="radio"]:checked + label{ 
+  background-color: #DCD0C0; 
+}
+
 .tab-input {
   display: none;
 }
@@ -131,8 +151,7 @@ a {
 
 .tab-container {
   display: none;
-  height: 50vh;
-  padding: 10px;
+  height: 60vh;
   border-top: 2px solid #C0B283;
   transition: height 0.5s ease-in-out;
 }
@@ -143,10 +162,15 @@ a {
 
 .tab-content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   height: 100%;
   animation: appear 0.5s ease;
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @keyframes appear {
@@ -160,6 +184,33 @@ a {
     transform: scale(1);
   }
 }
+
+#tab-1:checked ~ #content-1 .tab-content {
+  background-image: url(../images/whysite.jpg);
+}
+
+#tab-2:checked ~ #content-2 .tab-content {
+  background-image: url(../images/howguitar.jpg);
+}
+
+#tab-3:checked ~ #content-3 .tab-content {
+  background-image: url(../images/whyguitar.jpg);
+}
+
+#tab-4:checked ~ #content-4 .tab-content {
+  background-image: url(../images/legends/noel2.jpg);
+}
+
+.tab-content p {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(0,0,0,0.8);
+  border: 1px solid #C0B283;
+  border-radius: 5px;
+}
+
+/*News tab styles*/
 
 .news-content {
   flex-direction: column;
@@ -212,21 +263,7 @@ a {
   padding: 5px 0px;
 }
 
-#tab-1:checked ~ #content-1,
-#tab-2:checked ~ #content-2,
-#tab-3:checked ~ #content-3,
-#tab-4:checked ~ #content-4, 
-#tab-5:checked ~ #content-5 {
-  display: block;
-}
 
-#content-5 {
-  border-top: 2px solid #C0B283;
-}
-
-input[type="radio"]:checked + label{ 
-  background-color: #DCD0C0; 
-}
 
 
 
@@ -525,7 +562,7 @@ footer {
 
 @media screen and (min-width: 1100px) {  
 	/*about styles*/
-  .about-content label {
+  .tab-label {
     float: left;
     width: 20%;
 		border-right: 1px solid #C0B283;
@@ -538,6 +575,59 @@ footer {
   
   .tab-container {
     clear: both;
+  }
+  
+  .toggle-results {
+    height: 60vh;
+  }
+  
+  .news-content {
+    flex-direction: row;
+  }
+  
+  .search-controls {
+    align-items: center;
+    width: 30%;
+  }
+  
+  .cta-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-container button {
+    width: 75%;
+  }
+  
+  #search-results { 
+    width: 70%;  
+  }
+  
+  #search-results li {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #search-results li:first-child {
+    border-top-width: 0px;
+  }
+  
+  #search-results li:last-child {
+    border-bottom-width: 0px;
+  }
+  
+  #search-results li span:first-child {
+    width: 30%;
+  }
+  
+  #search-results li a{
+    width: 50%;
+  }
+  
+  #search-results li span:last-child {
+    width: 20%;
+    padding-right: 10px;
+    text-align: right;
   }
 }
 
