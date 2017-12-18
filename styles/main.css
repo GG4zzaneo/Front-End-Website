@@ -31,15 +31,15 @@ header {
 }
 
 .cover-img-2 {
-	background-image: url(../images/guitars/humming2.jpg);
+	background-image: url(../images/guitars/humming-bird.jpg);
 }
 
 .cover-img-3 {
-	background-image: url(../images/legends/sg2.jpg);
+	background-image: url(../images/guitars/sg.jpg);
 }
 
 .cover-img-4 {
-	background-image: url(../images/guitars/strat2.jpg);
+	background-image: url(../images/guitars/strat.jpg);
 }
 
 header h1 {
@@ -185,19 +185,19 @@ input[type="radio"]:checked + label{
 }
 
 #tab-1:checked ~ #content-1 .tab-content {
-  background-image: url(../images/whysite.jpg);
+  background-image: url(../images/about/whysite.jpg);
 }
 
 #tab-2:checked ~ #content-2 .tab-content {
-  background-image: url(../images/howguitar.jpg);
+  background-image: url(../images/about/how.jpg);
 }
 
 #tab-3:checked ~ #content-3 .tab-content {
-  background-image: url(../images/whyguitar.jpg);
+  background-image: url(../images/about/whyguitar.jpg);
 }
 
 #tab-4:checked ~ #content-4 .tab-content {
-  background-image: url(../images/legends/noel2.jpg);
+  background-image: url(../images/about/future.jpg);
 }
 
 .tab-content p {
@@ -431,7 +431,7 @@ footer {
 	}
 	
 	#welcome-info a:nth-child(3) {
-		background-image: url(../images/guitars/les2.jpg);
+		background-image: url(../images/guitars/les-paul.jpg);
 	}	
 	
 	#welcome-info a:nth-child(6) {

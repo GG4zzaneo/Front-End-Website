@@ -133,19 +133,19 @@ nav a:visited {
 	}
 
 	.menu-item-box:nth-child(1) {
-		background-image: url(../images/guitars/les_paul.png);
+		background-image: url(../images/nav/les_paul.png);
 	}
 
 	.menu-item-box:nth-child(2) {
-		background-image: url(../images/guitars/strat.png);
+		background-image: url(../images/nav/strat.png);
 	}
 
 	.menu-item-box:nth-child(3) {
-		background-image: url(../images/guitars/jag.png);
+		background-image: url(../images/nav/jaguar.png);
 	}
 
 	.menu-item-box:nth-child(4) {
-		background-image: url(../images/guitars/330.png);
+		background-image: url(../images/nav/330-nav.png);
 	}
 
 	.menu-item-text {
