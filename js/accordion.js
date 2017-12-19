@@ -2,11 +2,14 @@
 (function(){
 	let openBtn = document.getElementById("open-btn");
 	let collapseBtn = document.getElementById("collapse-btn");
+  let topBtn = document.getElementById("go-top-btn");
   let accordions = document.getElementsByClassName("accordion-tab");
 
 	openBtn.addEventListener("click", openAll);	
 	collapseBtn.addEventListener("click", collapseAll);
 	
+  topBtn.addEventListener("click",goToTop);
+  
   for (let i = 0; i < accordions.length; i++) { 
     //Add on click event to all accordion containers
     accordions[i].addEventListener("click", function(e){ toggleAccordion(e); }, false);    
@@ -28,6 +31,11 @@
 			}
 		}
 	}
+  
+  function goToTop(){
+    console.log("Go To Top");
+    document.documentElement.scrollTop = 0;
+  }
   
   function toggleAccordion(e) {
     //Store click element
