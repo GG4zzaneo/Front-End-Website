@@ -8,7 +8,7 @@
 	openBtn.addEventListener("click", openAll);	
 	collapseBtn.addEventListener("click", collapseAll);
 	
-  topBtn.addEventListener("click",goToTop);
+  topBtn.addEventListener("click", goToTop);
   
   for (let i = 0; i < accordions.length; i++) { 
     //Add on click event to all accordion containers
