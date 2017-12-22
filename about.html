@@ -1,29 +1,35 @@
 <!doctype html>
 
+<!-- Start of document. -->
 <html lang="en">
-	<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- Start of html head, declares title, various meta tags and links to relevant stylesheets. Viewport used to optimize view on mobile devices.
+-->   
+<head>
   <title>About | Giuseppe's Guitar Odyssey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   <meta name="description" content="Website">
   <meta name="author" content="Giuseppe">
   <link rel="shortcut icon" href="images/guitars/guitar.png" type="image/png" />
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/nav.css">
-
 </head>
 
+  <!-- Start of body -->
 <body>
 
+  <!-- Div used to hide nav from view when pulling down from top of page on mobile devices.-->
   <div id="nav-cover"></div>
 
+  <!-- Burger Menu for mobile devices. -->
   <div id="burger-menu">
     <div class="burger-line"></div>
     <div class="burger-line"></div>
     <div class="burger-line"></div>
   </div>
 
+  <!-- Navigation elements. Contains links to other pages.-->
   <nav>
     <a class="menu-item-box" href="index.html">
       <h3 class="menu-item-text">Home</h3>
@@ -39,83 +45,92 @@
     </a>
   </nav>
 
-
+  <!-- Page header consisting of an image and text header. -->
   <header class="cover-img-4">
     <h1>About</h1>
   </header>
 
+  <!-- Start of main content specific to each page. -->
+  <main>
+ 
+    <!-- Section containing all ABOUT content, including tabs, images and paragraphs. -->
+    <section id="check-box-container" class="about-content">
 
-  <!--
-		<section>
-			<article>
-				<p>So, you've had a look around and now you've stumbled acros this page. Well, there is so much content on the web available to us about guitars and their masters.</p>
-			</article>
-		</section>
-    -->
-  <section id="check-box-container" class="about-content">
+      <!-- Tab for click to reveal content. -->
+      <input id="tab-1" class="tab-input" type="radio" name="tabs">
+      <label class="tab-label" for="tab-1"><h3>Why the site?</h3></label>
 
-    <input id="tab-1" class="tab-input" type="radio" name="tabs">
-    <label class="tab-label" for="tab-1"><h3>Why the site?</h3></label>
+      <!-- Tab for click to reveal content. -->
+      <input id="tab-2" class="tab-input" type="radio" name="tabs">
+      <label class="tab-label" for="tab-2"><h3>How did I get into guitar?</h3></label>
 
-    <input id="tab-2" class="tab-input" type="radio" name="tabs">
-    <label class="tab-label" for="tab-2"><h3>How did I get into guitar?</h3></label>
+      <!-- Tab for click to reveal content. -->
+      <input id="tab-3" class="tab-input" type="radio" name="tabs">
+      <label class="tab-label" for="tab-3"><h3>Why do I like guitar?</h3></label>
 
-    <input id="tab-3" class="tab-input" type="radio" name="tabs">
-    <label class="tab-label" for="tab-3"><h3>Why do I like guitar?</h3></label>
+      <!-- Tab for click to reveal content. -->
+      <input id="tab-4" class="tab-input" type="radio" name="tabs">
+      <label class="tab-label" for="tab-4"><h3>Future abmitions</h3></label>
 
-    <input id="tab-4" class="tab-input" type="radio" name="tabs">
-    <label class="tab-label" for="tab-4"><h3>Future abmitions</h3></label>
+      <!-- Tab for click to reveal content. -->
+      <input id="tab-5" class="tab-input" type="radio" name="tabs">
+      <label class="tab-label" id="last-label" for="tab-5"><h3>News</h3></label>
 
-    <input id="tab-5" class="tab-input" type="radio" name="tabs">
-    <label class="tab-label" id="last-label" for="tab-5"><h3>News</h3></label>
 
-    <!-- User testing didn't like the change of height when changing tabs -->
-
-    <div id="content-1" class="tab-container">
-      <!-- Animation of content comes from center of this container -->
-      <div class="tab-content">
-        <p>This site was designed to express my passion for the guitar, one of the most versatile and magical instruments in the world. It has played a part in many great songs down the years at the hands of great players. I felt the need to pay homage to those who have graced the stage like few others and inspired generations to play as well as honour to the instruments they played.</p>
-      </div>
-    </div>
-
-    <div id="content-2" class="tab-container">
-      <div class="tab-content">
-        <p>I was never interested in music as a child. Many of my friends growing up played a variety of instruments but I shared no mutual desire to learn any. This was until the age of 12 however. On Christmas morning, I woke to find an acoustic sitting under the tree. From the moment I strummed the first chord I was hooked and haven't looked back since.</p>
-      </div>
-    </div>
-
-    <div id="content-3" class="tab-container">
-      <div class="tab-content">
-        <p>Where to start? The guitar is one of the few things in this crazy world which provides escapism. It lets you express youself in all moments. Through times of sadness or joy to excitement and boredom. The therapeutic and energetic nature of playing the guitar is addictive, allowing for an unrivalled joy while you improve your skills along the way! It's a win-win.</p>
-      </div>
-    </div>
-
-    <div id="content-4" class="tab-container">
-      <div class="tab-content">
-        <p>My future ambitions are to form a band, writing good music with nice melodies. Who knows, we might even get signed and release a new anthem for the ages! One things for sure, guitar music needs to be plucked out of the abyss and forced back into the mainstream! Aside from this dream, I hope to enjoy playing the guitar for many years to come, be it with friends and family or just sitting in my room with an acoustic.</p>
-      </div>
-
-    </div>
-
-    <div id="content-5" class="tab-container">
-      <div class="tab-content news-content">
-        <div class="search-controls">
-          <label>Search the guardian: <input id="search-input" value="guitar"></label>
-          <div class="cta-container">
-            <button id="search-btn" class="link-button cta-button" type="button">Search</button>
-            <button id="clear-btn" class="link-button cta-button" type="button">Clear</button>
-          </div>
+      <!-- Div to contain and display specific nested content when appropriate tab clicked by user. -->
+      <div id="content-1" class="tab-container">
+        <!-- Animation of content comes from center of this container. -->
+        <div class="tab-content">
+          <p>This site was designed to express my passion for the guitar, one of the most versatile and magical instruments in the world. It has played a part in many great songs down the years at the hands of great players. I felt the need to pay homage to those who have graced the stage like few others and inspired generations to play as well as honour to the instruments they played.</p>
         </div>
-        <ul id="search-results"></ul>
       </div>
-    </div>
 
-  </section>
+      <!-- Div to contain and display specific nested content when appropriate tab clicked by user. -->
+      <div id="content-2" class="tab-container">
+        <div class="tab-content">
+          <p>I was never interested in music as a child. Many of my friends growing up played a variety of instruments but I shared no mutual desire to learn any. This was until the age of 12 however. On Christmas morning, I woke to find an acoustic sitting under the tree. From the moment I strummed the first chord I was hooked and haven't looked back since.</p>
+        </div>
+      </div>
 
+      <!-- Div to contain and display specific nested content when appropriate tab clicked by user. -->
+      <div id="content-3" class="tab-container">
+        <div class="tab-content">
+          <p>Where to start? The guitar is one of the few things in this crazy world which provides escapism. It lets you express youself in all moments. Through times of sadness or joy to excitement and boredom. The therapeutic and energetic nature of playing the guitar is addictive, allowing for an unrivalled joy while you improve your skills along the way! It's a win-win.</p>
+        </div>
+      </div>
+
+      <!-- Div to contain and display specific nested content when appropriate tab clicked by user. -->
+      <div id="content-4" class="tab-container">
+        <div class="tab-content">
+          <p>My future ambitions are to form a band, writing good music with nice melodies. Who knows, we might even get signed and release a new anthem for the ages! One things for sure, guitar music needs to be plucked out of the abyss and forced back into the mainstream! Aside from this dream, I hope to enjoy playing the guitar for many years to come, be it with friends and family or just sitting in my room with an acoustic.</p>
+        </div>
+      </div>
+
+      <!-- Div specifically for news. Uses guardian API and search functionality to fetch specific info corresponding to user input. Search and clear buttons included for extra usability. Search results presented in list. -->
+      <div id="content-5" class="tab-container">
+        <div class="tab-content news-content">
+          <div class="search-controls">
+            <label>Search the guardian: <input id="search-input" value="guitar"></label>
+            <div class="cta-container">
+              <button id="search-btn" class="link-button cta-button" type="button">Search</button>
+              <button id="clear-btn" class="link-button cta-button" type="button">Clear</button>
+            </div>
+          </div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <!-- End of main section of body. -->
+  
+  <!-- Basic footer with copyright information. -->
   <footer>
     <p>&copy; Gazzaneo Giuseppe</p>
   </footer>
 
+  <!-- JavaScript files called for menu and about page actions behaviour including local storage and API calls. -->
   <script src="js/menu.js"></script>
   <script src="js/api.js"></script>
 

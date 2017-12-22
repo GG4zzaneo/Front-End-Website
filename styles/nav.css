@@ -1,3 +1,6 @@
+/* Initial nav styles */
+
+/* Nav is pushed 50px above screen, out of user view. Fills full width, optimum styling for mobile nav to grab full user attention. Height is sufficient to allow all elements to be visible and maintain close proximity between users. It also ensures nav is visible for users with accessibility in mind. FLex column used to order items vertically for mobile design. Different colour to rest of site distinguishes nav and grabs attention so user is instantly aware nav is open. z-index allows nav to be visible on top of the background image. */
 nav {
 	position: fixed;
 	top: -50vh;
@@ -14,12 +17,12 @@ nav {
 	overflow: hidden;
 }
 
+/* class appears or disappears depending on if burger is clicked to be opened or closed. */
 .toggle-nav {
 	top: 0vh;
 }
 
-/*Fix scrolling up pass stop and seeing nav*/
-
+/* Prevents nav being visible when users scroll up when nav is closed. This was pointed out in user testing. This class provides a cover over the nav at the correct height with a stronger z-index so it appears on top. */
 #nav-cover {
 	position: absolute;
 	bottom: 100vh;
@@ -29,16 +32,18 @@ nav {
 	z-index: 100;
 }
 
+/* Styling of text in nav. */
 .menu-item-text {
 	text-align: center;
 	padding: 20px;
 }
 
+/* Change background colour of active page in nav to show users which page they are on. */ 
 .menu-item-text.active {
-	color: black;
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* Key that position for burger is fixed so it remains visible and accessible for users at all times. Styling done to give exact symmetry across the burger, nice aesthetic for the user. Border radius given to give a rounded edge, not a sharp edge which is more friendly for users. Z-index of 100 ensures it is visible at all times above over content. */
 #burger-menu {
 	position: fixed;
 	top: 15px;
@@ -51,6 +56,7 @@ nav {
 	z-index: 100;
 }
 
+/* Styling of individual lines within burger menu. All structural styling done with symmetry in mind. */
 .burger-line {
 	position: absolute;
 	top: 15px;
@@ -61,6 +67,7 @@ nav {
 	transition: all 0.2s linear;
 }
 
+/* Positioning of specific burger lines to achieve even menu. */
 .burger-line:first-child {
 	top: 6px;
 }
@@ -69,6 +76,8 @@ nav {
 	top: 24px;
 }
 
+
+/* rotations of specific burger lines to animate into 'X' when menu is opened. */
 #burger-menu.active .burger-line:first-child {
 	top: 15px;
 	transform: rotate(45deg);
@@ -83,24 +92,32 @@ nav {
 	transform: rotate(-45deg);
 }
 
+/* Colour changes on hover to indicate it can be clicked. */
 nav a:hover {
 	background-color: #F4F4F4;
 }
 
+/* Colour of text regardless of visisted is always the main theme of charcoal. */
 nav a:link,
 nav a:visited {
 	color: #373737;
 }
 
+
+/* Larger screen nav for laptops and larger screen sizes. */
 @media screen and (min-width: 1000px) {
+  
+  /* Nav cover removed from desktop view since it is no longer necessary. */
 	#nav-cover {
 		display: none;
 	}
 
+  /* Burger menu removed from view. No longer needed for computer screens. */
 	#burger-menu {
 		display: none;
 	}
 
+  /* Height shortened for laptop screens. It is always visible so does not need to be as large to attract attention. Flow direction changed to row to spread content horizontally, following repsonsive design principles. */
 	nav {
 		position: relative;
 		top: 0px;
@@ -112,10 +129,11 @@ nav a:visited {
 		background-color: #373737;
 	}
 
+  /* Menu items contained in boxes. Background is transprent in order to see pictures underneath. Width and height chosen give even size and appearance. Background (guitar png) 90% to grow to 100% on hover, similar to desktop home page links. Transition occurs when screen is changed from tablet, menu items appear to fall into view. */
 	.menu-item-box {
 		position: relative;
 		display: flex;
-		align-items: center;
+    align-items: center;
 
 		width: 40%;
 		height: 100%;
@@ -132,6 +150,7 @@ nav a:visited {
 		transition: all 0.2s ease;
 	}
 
+  /* Respective pngs for each menu item's background image are specified. */
 	.menu-item-box:nth-child(1) {
 		background-image: url(../images/nav/les_paul.png);
 	}
@@ -148,6 +167,7 @@ nav a:visited {
 		background-image: url(../images/nav/330-nav.png);
 	}
 
+  /* Positioning and centering of text allows it to line up perfectly on top of guitar necks, giving good alignment White font chosen to stand out against dark background, giving nice contrast to attract attention. Changing font to brush script is necessary to attract attention since it is always in view and can not be hidden like the mobile nav. Border provides nice contrast and clearly outlines each menu item. */
 	.menu-item-text {
 		position: absolute;
 		top: calc(50% - 15px);
@@ -177,17 +197,20 @@ nav a:visited {
 		transition: all 0.5s ease;
 	}
 
+  /* On hover, size increases to appear as if it expands towards the user. A nice feature. COlour changes on hover. */
 	a.menu-item-box:hover {
 		background-size: 100%;
 		background-color: transparent;
 	}
 
+  /* Light padding to give slighly more spacing so nav items do not appear compact. */
 	.menu-item-box {
 		padding: 10px;
 	}
+  
+  .menu-item-box h3 {}
 
-	.menu-item-box h3 {}
-
+  /* Items change colour when active or hovered, distinguishing them from other items of lesser importance at the time. Clearly identifies what the user is hovering on or what page they are on at the time. */
 	a.menu-item-box:hover .menu-item-text,
 	.menu-item-text.active {
 		color: black;

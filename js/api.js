@@ -1,7 +1,11 @@
 "use strict";
 
+/* Local storage used to remember last ABOUT tab user visited so it can be loaded again on revisting page. 
+
+Guardian API used to retreieve news according to user input. */
 (function () {
 
+  /* Assign variables to elemens within HTML. */
   let checkBoxContainer = document.getElementById("check-box-container");
   let newsContainer = document.getElementById("content-5");
   let queryBox = document.getElementById("search-input");
@@ -9,6 +13,7 @@
   let clearBtn = document.getElementById("clear-btn");
   let resultContainer = document.getElementById("search-results");
 
+  /* Assign variable to API key. */
   let baseURL = "https://content.guardianapis.com/search?api-key=d2224436-13b9-4c2b-acc4-eb76d807dac4&q=";
   
   

@@ -1,11 +1,14 @@
 <!doctype html>
 
-<html>
+<!-- Start of document. -->
+<html lang="en">
 
+<!-- Start of html head, declares title, various meta tags and links to relevant stylesheets. Viewport used to optimize view on mobile devices.
+-->
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title>Giuseppe's Guitar Odyssey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
 	<meta name="description" content="Website">
 	<meta name="author" content="Giuseppe">
 	<link rel="shortcut icon" href="images/guitars/guitar.png" />
@@ -13,18 +16,23 @@
 	<link rel="stylesheet" href="styles/nav.css">
 </head>
 
+  
+  <!-- Start of body -->
 <body>
 
+  <!-- Div used to hide nav from view when pulling down from top of page on mobile devices.-->
 	<div id="nav-cover"></div>
 
+  <!-- Burger Menu for mobile devices. -->
 	<div id="burger-menu">
 		<div class="burger-line"></div>
 		<div class="burger-line"></div>
 		<div class="burger-line"></div>
 	</div>
 
+  
+  <!-- Navigation elements. Contains links to other pages.-->
 	<nav>
-		<!--<div class="menu-item-box"></div>-->
 		<a class="menu-item-box" href="index.html">
 			<h3 class="menu-item-text active">Home</h3>
 		</a>
@@ -37,18 +45,19 @@
 		<a class="menu-item-box" href="about.html">
 			<h3 class="menu-item-text">About</h3>
 		</a>
-		<!--<div class="menu-item-box"></div>-->
 	</nav>
 
+  <!-- Page header consisting of an image and text header. -->
+  <header class="cover-img-1">
+	  <h1>Giuseppe's Guitar Odyssey</h1>
+  </header>
+  
+  <!-- Start of main content specific to each page. -->
 	<main>
 
-		<header class="cover-img-1">
-			<h1>Giuseppe's Guitar Odyssey</h1>
-		</header>
-
-
+    <!-- Lower half of page containing welcome text in p tags and page links. Horizontal rules used for decoration on desktop. -->
 		<section id="welcome-info">
-			<h1 id="home-welcome">Welcome!</h1>
+			<h2 id="home-welcome">Welcome!</h2>
 			<p>Welcome to the site and thank you for visiting. If you love guitars and legendary players as much as we do or you are simply looking for a website to mark then you have found the right place.</p>
 
 			<a class="link-button" href="guitars.html"><h3>Guitars</h3></a>
@@ -64,14 +73,18 @@
 			<p>We know what it's like to spend all day looking for nice compilations of content so we decided to create one of our own that we would be happy to look at all day. So, sit back, relax and admire your favourite guitars and their masters!</p>
 		</section>
 	</main>
-
+  <!-- End of main section of body. -->
+  
+  <!-- Basic footer with copyright information. -->
 	<footer>
 		<p>&copy; Gazzaneo Giuseppe</p>
 	</footer>
 
-
+  <!-- JavaScript file called for menu behaviour. -->
 	<script src="js/menu.js"></script>
 
+<!-- End of body. -->
 </body>
 
+<!-- End of document. -->  
 </html>
