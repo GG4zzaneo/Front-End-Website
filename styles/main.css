@@ -682,14 +682,14 @@ footer {
     width: 30%;
   }
   
-  /* Container style specifies appearance of inner buttons. */
-  .cta-container {
+  /* Container style specifies appearance of inner buttons. in news section. */
+  .search-container {
     flex-direction: column;
     align-items: center;
   }
   
-  /* Width for about and accordion page buttons. */
-  .cta-container button {
+  /* Width for about page buttons realting to news tab. */
+  .search-container button {
     width: 75%;
   }
   
