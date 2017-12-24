@@ -166,6 +166,8 @@ input[type="radio"]:checked + label{
   width: 100%;
   padding: 5px 0px;
   text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 /* Content for each tab initially hidden unless clicked by users. Height specified to fit nicely with background images. Transition given to appear to grow out of nowehere as tabs are clicked. Border distinguishes against tabs. */
