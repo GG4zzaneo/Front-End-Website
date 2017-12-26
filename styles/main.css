@@ -238,6 +238,7 @@ input[type="radio"]:checked + label{
   background-color: rgba(0,0,0,0.8);
   border: 1px solid #C0B283;
   border-radius: 5px;
+	font-size:1.2em;
 }
 
 /*News tab styles*/
@@ -704,6 +705,7 @@ footer {
   #search-results li {
     flex-direction: row;
     align-items: center;
+		font-size:1.2em;
   }
   
   /* Top border removed for first list item, giving clean look against the tab bar. */
