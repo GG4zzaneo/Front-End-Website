@@ -1,0 +1,224 @@
+/* Alignment set for introductory text. */
+.page-intro {
+	text-align: center;
+}
+
+/* Consitent padding across all allows spacing of elements, preventing accordions filling width of page.*/
+.page-intro, .accordion-container {
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+/* Font set for header within accordion tabs. */
+.accordion-container h2 {
+  font-family: Brush Script MT, cursive;
+}
+
+/* Accordion tab set to relative, fills width of accordion container. Styling set to match general site aesthetic, border given to stand out against background. Padding allows clean spacing of content within. Transition determines speed at which colour changes. */
+.accordion-tab {
+  position: relative;
+  background-color: #373737;
+  color: #C0B283;
+  padding: 5px;
+  transition: 0.5s;
+  border: 1px solid #C0B283;
+}
+
+/* Positioning of container housing icon lines. Height and width chosen to make lines within symmetrical and easy to calculate the required width and height of them to maintain symmetry.*/
+.plus-container {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  transition: all 0.2s linear;
+}
+
+
+/* Styling for lines in accordion tab to form plus and minus icons. Tranistions set to enable animation on activation. */
+.icon-line {
+  content: '';
+  position: absolute;
+  background-color: #C0B283;
+  transition: all 0.2s linear;
+  transition-delay: 0.3s;
+}
+
+/* Styling and positioning for vertical line in plus and minus icon. */
+.vert {
+  top: 0px;
+  left: calc(50% - 1.5px);
+  width: 3px;
+  height: 100%;
+}
+
+/* Styling and positioning for horizontal line in plus and minus icon. */
+.hori {
+  top: calc(50% - 1.5px);
+  left: 0px;
+  width: 100%;
+  height: 3px;  
+}
+
+/* Max height of 0 given to accordion content to hide from view when accordions closed. Text centrally aligned for nice and even aesthetic. Overflow is hidden to prevent content being visible despite accordions being closed. Transition added for when accordions are opened and closed. 1s is sufficient to show animation without wasting user time waiting. */
+.accordion-content {
+  max-height: 0px;
+  text-align: center;
+  border: 1px solid #C0B283;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+/* Spacing for textual content within accordions. */
+.accordion-content > div {
+	margin-bottom: 10px;
+  padding: 0px 5px;
+}
+
+/* Width of 100% given to fill up container width, leaving no space. Change made after users requested for no space. Height is set to auto to avoid skewed picture according to width. Light border given to distinguish against start of text. */
+.accordion-content img {
+  width: 100%;
+  height: auto;
+	border-bottom: 1px solid #C0B283;
+}
+
+/* Spacing to optimise appearnce of the accordion list. */
+.accordion-content ul {
+	margin-top: 10px;
+	margin-bottom: 0px;
+  padding: 0px 5px;
+}
+
+/* Accordion lists given even spacing, first child on left and second to the right. Gives consistently clean and readable view. */
+.accordion-content li {
+  display: flex;
+	justify-content: space-between;
+}
+
+/* Active accordion header tabs changed to black background, clearly showing users which are open. */
+.accordion-container.active .accordion-tab, .accordion:hover {
+  background-color: black;
+}
+
+/* Angles for perfect rotation of plus and minus signs specified. 45 and -45 degree rotations allow for lines to fall perfectly into place. */
+.accordion-container.active .plus-container {
+  transform: rotate(45deg);
+}
+
+.accordion-container.active .hori {
+  transform: rotate(-45deg);
+}
+
+
+.accordion-container.active .vert {
+  transform: rotate(45deg);
+}
+
+/* Maximum height at which open accordions content can reach is specified. Prevents content being covered. All content fits within this maximum height. */
+.accordion-container.active .accordion-content {
+  max-height: 1500px;
+}
+
+/* Styling of button to return to the top. Centered with margin to push it away from the bottom of the screen.*/
+#go-top-btn {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+/*tablet styles*/
+@media screen and (min-width: 600px) {
+  /* Horizontal rule remains hidden. If shown, styling is ruined. Not necessary for tablet size. */
+	.accordion-container hr {
+		display: none;
+	}
+	
+  /* Allows content to be hidden when accordion is closed.*/
+  .accordion-content {
+    padding: 0px;
+  }
+  
+  /* flexbox layout used for div contents. */
+  .accordion-content div {
+    display: flex;
+  }
+  
+  /* Margins adjusted to allow for perfect fit within container. -6 allows border to fit against bottom border of image container. */
+  .accordion-content > div {
+		margin-top: -6px;
+    margin-bottom: 0px;
+  }
+  
+  /* Flex column used to display list items vertically. Border applied to right to visibly separate against the descriptive paragraph.*/
+  .accordion-content ul {    
+		display: flex;
+		flex-direction: column;
+		justify-content: center;  
+    width: 40%;
+    margin: 0px;
+    padding: 5px;
+    border-right: 1px solid #C0B283;
+  } 
+  
+  /* Padding applied to evenly space out elements within the li tags. 2px allows for content to look compact while appearing nicely spaced.*/
+  .accordion-content span {
+		padding: 2px;
+  } 
+  
+  /* First span element of each li tag aligned to the left. */
+  .accordion-content span:first-child {
+    text-align: left; 
+  } 
+  
+  /* Style for descriptive paragraph to fill its container and appear compact. */
+  .accordion-description-container {
+		align-items: center;
+    width: 60%;
+    padding: 5px;
+    border: 1px solid #C0B283;
+    border-width: 0px;
+  }
+	
+}
+	
+/* Extra screen size added due to user testing. Users did not like accordion behaviour and button behaviour at a certain width. */
+@media screen and (min-width: 750px) {
+  /* Width of accordion textual elements adjusted to allow for easier reading, with content for spaced out than previously.*/
+	.accordion-content ul {  
+    width: 30%;
+	}	
+  
+  .accordion-description-container {
+    width: 70%;
+  }
+}
+
+/*laptop size styles*/
+@media screen and (min-width: 1000px) { 
+	/* accordion pages */
+  
+	.accordion-content {
+		position: relative;
+	}
+	
+  /* Image height increased for computer screens. Border on bottom removed for clean appearance. */
+	.accordion-content img {
+		max-height: 75vh;
+		border-bottom-width: 0px;
+	}
+	
+  /* Accordion content div (content without image) positioned relative to image. Rooted to the bottom of the container to appear clean with no gaps. Backgorund given like header titles to make text stand out and easy to read against background image.Initially not visible unless hovered. Transition used to appear gradually. */
+	.accordion-content > div {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		background-color: rgba(0,0,0,0.8);
+		border-top: 1px solid #C0B283;
+		opacity: 0;
+		transition: opacity 0.4s ease-in-out;
+	}
+	
+  /* Enables div content to be seen on hover. Inspired by transition lab from class (lab 7).*/
+	.accordion-content > div:hover {
+		opacity: 1;
+	}	
+}
