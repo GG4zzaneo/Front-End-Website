@@ -14,7 +14,7 @@
 	collapseBtn.addEventListener("click", collapseAll);
   topBtn.addEventListener("click", goToTop);
   
-	/* Add on click event listener to all accordions by using a loop. */
+	/* Add a click event listener to all accordions by using a loop. */
   for (let i = 0; i < accordions.length; i++) {
 		accordions[i].addEventListener("click", function(e){ toggleAccordion(e); }, false);    
   }
@@ -50,7 +50,6 @@
 	
 	*/
   function toggleAccordion(e) {
-    //Store click element
     
     let acc;
       
@@ -63,7 +62,7 @@
 			/* If element is an accordion, execute the statement. */
       if (e.path[i].classList.contains("accordion-tab")) {
       
-				/* Assign variable to specific accotdion. */
+				/* Assign variable to accotdion. */
         acc = e.path[i];
    
 				/* Active class activated to open accordion clicked. */

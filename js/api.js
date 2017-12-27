@@ -1,8 +1,7 @@
 "use strict";
 
-/* Local storage used to remember last ABOUT tab user visited so it can be loaded again on revisting page. 
-
-Guardian API used to retreieve news according to user input. */
+/*
+Guardian API used to retrieve news according to user input. Relevant behaviour given to html elements to achieve functionality. */
 (function () {
 
 	/* Assign variables to specified elements within HTML. */
@@ -13,18 +12,18 @@ Guardian API used to retreieve news according to user input. */
   let clearBtn = document.getElementById("clear-btn");
   let resultContainer = document.getElementById("search-results");
 
-  /* Assign variable to API key. */
+  /* Assign variable to API key to allow for searches. */
   let baseURL = "https://content.guardianapis.com/search?api-key=d2224436-13b9-4c2b-acc4-eb76d807dac4&q=";
 
 
-	// Add event listeners to buttons.
+	/* Add event listeners to buttons. */
 	searchBtn.addEventListener("click", function (e) {
 			getSearchResults(e);
 	});
 
 	queryBox.addEventListener("keydown", function (e) {
 		if (e.which === 13) {
-			//Enter key pressed
+			/*Enter key pressed */
 			getSearchResults(e);
 		 }
 	});
@@ -37,23 +36,22 @@ Guardian API used to retreieve news according to user input. */
 		let request = new Request(url);
 		fetch(request)
 		.then(function (response) {
-			// console.log(`response: ${response.status}`);
 			return response.json();
 		})
 		.then(function (data) {
-			//console.log(data);
+
 			let key;
 			let theData = "";
 			let tmp = data.response.results;
-			//Convert response json data to a string of html elements
+			
+			/* Convert response json data to a string of html elements. */
 			for (key in tmp) {
 				theData += `<li><span>${tmp[key].sectionName}</span><a href="${tmp[key].webUrl}">${tmp[key].webTitle}</a><span>${tmp[key].webPublicationDate.substr(0,10)}</span></li>`;
 			}
 
-			//console.log(theData);
 			resultContainer.innerHTML = theData;
 
-			//show results
+			/* Show results. */
 			newsContainer.classList.add("toggle-results");
 		});
 
@@ -61,8 +59,7 @@ Guardian API used to retreieve news according to user input. */
 
 	}
 
-		/* Empty inner HTML of search results to clear screen.
-		 Query box emptied to remove previous search term. */
+	/* Empty inner HTML of search results to clear screen. Query box emptied to remove previous search term. */
 	function clearSearchResults() {
 		queryBox.value = "";
 		resultContainer.innerHTML = "";
