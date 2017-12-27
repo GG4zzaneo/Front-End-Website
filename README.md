@@ -35,7 +35,6 @@ This website is inspired by my passion for the guitar, a topic I enjoy and have 
 
 
 
-
 ## Structure
 
 The site is comprised of four pages:
@@ -51,9 +50,8 @@ This site does not include a site map internally because all of the pages are re
 
 [1] Provides inspiration for the diagram used.
 
-[Site Map](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/map.PNG)
-[Site Links](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/links.PNG)
-
+* [Site Map](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/map.PNG)  
+* [Site Links](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/links.PNG)
 
 
 
@@ -72,7 +70,7 @@ Subtle animations are used where suitable. This is because too much animation ca
 
 
 ## Initial Ideas
-Included in this project are various wireframes (sketches) of initial ideas for certain pages. The initial mobile page can be found at https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/wireframes.
+Included in this project are various wireframes (sketches) of initial ideas for certain pages. https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/wireframes.
 
 
 ### Home Initial	
@@ -92,13 +90,13 @@ The initial design for desktop home was simple, with a traditional horizontal na
 ### Accordion Initial
 The mobile views were those used in the final design so they are discussed below. The desktop page for the legends and guitars was not initially designed with accordions in mind. Images were displayed in two-by-two grids with relevant information appearing on mouse hover.
 
-* [Initial Desktop Accordion Pages](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/initial-accordion.pdf)
+* [Initial Desktop Accordion Pages](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/wireframes/initial-accordion.pdf)
 
 
 ### About Initial
 The initial about page was designed later than the rest as it was not necessarily a concern. By this point I had understood the responsive principles, which is why the initial sketches show mobile content stacked on top of each other unlike the home page design. The idea was to simply show relevant content under relevant headings.
 
-[Initial About Page Design](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/initial-about.pdf)
+* [Initial About Page Design](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/initial-about.pdf)
 	
 
 	
@@ -108,7 +106,7 @@ The initial about page was designed later than the rest as it was not necessaril
 Burger icon is used for mobile devices, popular with many modern sites. The mobile nav slides down when toggled. It's design is cleaner than Lush's because the menu is hidden from view unless toggled. 
 	
 * [Mobile Nav](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/screenshots/home-mobile-nav.png)
-* [Tablet Nav User Test](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/user_testing/tablet_nav.png)
+* [Tablet Nav User Test](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/user_testing/tablet_nav.jpeg)
 
 Users wanted ability to close nav automatically simply by clicking any other part of the page. This was added in commit:  
 
@@ -154,9 +152,9 @@ The tablet home page is a hybrid of the former two. It has the mobile nav mixed 
 * [Tablet Home](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/screenshots/tablet-home.png)
 
 #### Wireframes
-* [Mobile](https://github.com/GG4zzaneo/Front-End-Website/blob/master/images/wireframes/mobile_home.jpg)
-* [Tablet](https://github.com/GG4zzaneo/Front-End-Website/blob/master/images/wireframes/tablet_home.jpg)
-* [Desktop](https://github.com/GG4zzaneo/Front-End-Website/blob/master/images/wireframes/desktop.png)
+* [Mobile](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/mobile_home.jpg)
+* [Tablet](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/tablet_home.jpg)
+* [Desktop](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/desktop.png)
 	
 
 
@@ -175,7 +173,7 @@ An important suggestion from one user in testing was to include buttons to open 
 
 A later suggestion from the same user at another stage in testing was to include a button allowing users to return to the top instantly in order to prevent unnecessary scrolling. This was done in commit 3dc2eeba21b7825dffd7684aaa595625efb21d15.
 
-* [Testing back to top button](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/user_testing/desktop-hover-accordion.jpeg)
+* [Testing back to top button](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/user_testing/desk_hover_accordion.jpeg)
 	
 	
 One aspect that was changed were the guitar images. These were originally pngs. Users felt these were not clean and ruined the look of the page, preferring the look of the legends accordions, with full pictures. This was done in 4f5440aa4b01da8d69f65be2f17a09ce55025160.
@@ -210,17 +208,13 @@ The news tab presents news results as a list. This can be seen in the wireframes
 
 It uses internal storage to remember the tabs the user last visited so they are loaded on return to the page. See commit 93c0c03873d145a17c5837b4d41815c50309eecd. 
 
-* [About User Testing](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/about-initial.png)  
-* [About Page](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/home-buttons.png)
-
-
 The API used is the Guardian's, added in 4f5440aa4b01da8d69f65be2f17a09ce55025160. It is appropriately located in the news tab and allows users to search for relevant news.
 
 
 #### Wireframes 
-* [Mobile](https://github.com/GG4zzaneo/Front-End-Website/blob/master/images/wireframes/mobile_accordion.jpg)
-* [Tablet](https://github.com/GG4zzaneo/Front-End-Website/blob/master/images/wireframes/tablet_accordion_open.jpg)
-* [Desktop](https://github.com/GG4zzaneo/Front-End-Website/blob/master/images/wireframes/desktop_accordion.jpg)
+* [Mobile](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/mobile_accordion.jpg)
+* [Tablet](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/tablet_accordion_open.jpg)
+* [Desktop](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/desktop_accordion.jpg)
 
 
 ## Usability
