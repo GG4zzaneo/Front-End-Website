@@ -314,8 +314,8 @@ footer {
   background-color: black;
 }
 
+/* -------------- Tablet -------------- */
 
-/*tablet styles*/
 @media screen and (min-width: 600px) {
 	
   
@@ -395,6 +395,9 @@ footer {
 }
 
 
+/* -------------- Laptop and Larger -------------- */
+
+
 /*laptop size styles*/
 @media screen and (min-width: 1000px) {  
 	
@@ -420,6 +423,10 @@ footer {
 	#welcome-info a {
     font-family: Brush Script MT, cursive;
 		font-size: 28px;
+	}
+	
+	.cta-button:hover, .tab-label:hover {
+		cursor: pointer;
 	}
   
 }

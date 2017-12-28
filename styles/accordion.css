@@ -125,7 +125,9 @@
   margin-bottom: 15px;
 }
 
-/*tablet styles*/
+
+/* -------------- Tablet -------------- */
+
 @media screen and (min-width: 600px) {
   /* Horizontal rule remains hidden. If shown, styling is ruined. Not necessary for tablet size. */
 	.accordion-container hr {
@@ -192,7 +194,8 @@
   }
 }
 
-/*laptop size styles*/
+/* -------------- Laptop and Larger -------------- */
+
 @media screen and (min-width: 1000px) { 
 	/* accordion pages */
   
@@ -221,4 +224,8 @@
 	.accordion-content > div:hover {
 		opacity: 1;
 	}	
+	
+	.accordion-tab:hover {
+		cursor: pointer;
+	}
 }

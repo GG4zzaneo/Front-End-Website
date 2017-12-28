@@ -62,7 +62,7 @@
 			/* If element is an accordion, execute the statement. */
       if (e.path[i].classList.contains("accordion-tab")) {
       
-				/* Assign variable to accotdion. */
+				/* Assign variable to accordion. */
         acc = e.path[i];
    
 				/* Active class activated to open accordion clicked. */

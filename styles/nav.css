@@ -104,7 +104,8 @@ nav a:visited {
 }
 
 
-/* Larger screen nav for laptops and larger screen sizes. */
+/* -------------- Laptop and Larger -------------- */
+
 @media screen and (min-width: 1000px) {
   
   /* Nav cover removed from desktop view since it is no longer necessary. */
