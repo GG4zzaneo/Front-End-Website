@@ -70,33 +70,35 @@ Subtle animations are used where suitable. This is because too much animation ca
 
 
 ## Initial Ideas
-Included in this project are various wireframes (sketches) of initial ideas for certain pages. https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/wireframes.
+Included in this project are various wireframes (sketches) of initial ideas for certain pages. https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/sketched_wireframes
+
+There are also digital wireframes of a higher quality in https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/wireframes
 
 
 ### Home Initial	
 Initial wireframe sketches for home page show bad understanding of mobile design and responsiveness. The horizontal design was initially wrong. On revising the labs and lectures I understood the principles of responsiveness and later changed this.  
 
-* [Initial Home Mobile View](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/initial-mobile-home.pdf)
+* [Initial Home Mobile View](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/initial-mobile-home.jpeg)
 	
 The initial idea for the tablet homepage was identical to that of the mobile only with the text boxes shorter in height an greater in width.
 
-* [Initial Home Tablet View](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/initial-tablet.pdf)
+* [Initial Home Tablet View](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/initial-tablet.jpeg)
 	
 The initial design for desktop home was simple, with a traditional horizontal nav at the top. The similarity of this sketch to the mobile site showed that changes needed to be made in order to make the responsiveness more obvious.
 
-* [Initial Home Desktop View](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/initial-desktop.png)
+* [Initial Home Desktop View](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/initial-desktop.jpeg)
 
 
 ### Accordion Initial
 The mobile views were those used in the final design so they are discussed below. The desktop page for the legends and guitars was not initially designed with accordions in mind. Images were displayed in two-by-two grids with relevant information appearing on mouse hover.
 
-* [Initial Desktop Accordion Pages](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/wireframes/initial-accordion.pdf)
+* [Initial Desktop Accordion Pages](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/wireframes/initial-accordion.jpeg)
 
 
 ### About Initial
 The initial about page was designed later than the rest as it was not necessarily a concern. By this point I had understood the responsive principles, which is why the initial sketches show mobile content stacked on top of each other unlike the home page design. The idea was to simply show relevant content under relevant headings.
 
-* [Initial About Page Design](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/initial-about.pdf)
+* [Initial About Page Design](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/initial-about.jpeg)
 	
 
 	
@@ -152,9 +154,9 @@ The tablet home page is a hybrid of the former two. It has the mobile nav mixed 
 * [Tablet Home](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/screenshots/tablet-home.png)
 
 #### Wireframes
-* [Mobile](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/mobile_home.jpg)
-* [Tablet](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/tablet_home.jpg)
-* [Desktop](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/desktop.png)
+* [Mobile](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/mobile_home.jpeg)
+* [Tablet](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/tablet_home.jpeg)
+* [Desktop](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/desktop.jpeg)
 	
 
 
@@ -189,8 +191,8 @@ Views of each view are linked below. These show responsive design, with the stru
 * [Tablet Accordion](https://github.com/GG4zzaneo/Front-End-Website/tree/master/readme-images/screenshots/tablet-guitar-accordion.png)
 
 #### Wireframes
-* [Mobile](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/mobile_accordion.jpg)
-* [Tablet](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/tablet_accordion_open.jpg)
+* [Mobile](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/mobile_accordion.jpeg)
+* [Tablet](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/tablet_accordion_open.jpeg)
 * [Desktop](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/desktop_accordion.jpg)
 	
 ### About Page	
@@ -212,9 +214,10 @@ The API used is the Guardian's, added in 4f5440aa4b01da8d69f65be2f17a09ce5502516
 
 
 #### Wireframes 
-* [Mobile](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/mobile_accordion.jpg)
-* [Tablet](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/tablet_accordion_open.jpg)
-* [Desktop](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/desktop_accordion.jpg)
+* [Mobile](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/mobile_about.jpeg)
+* [Desktop](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/desktop_about.JPEG)
+* [Mobile News](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/mobile_news.jpeg)
+* [Desktop News](https://github.com/GG4zzaneo/Front-End-Website/blob/master/readme-images/wireframes/desktop_news.JPG)
 
 
 ## Usability
